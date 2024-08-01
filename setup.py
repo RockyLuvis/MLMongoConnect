@@ -15,7 +15,7 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup(
-    name='mongodb_connect',
+    name='MLOps_mongodb',
     version='0.0.2',
     author='Raveendra Seetharam',
     author_email='ravibhattinkw@gmail.com',
