@@ -29,6 +29,6 @@ setup(
     package_dir={"": "src"},
 
     #install_requires=["scikit-learn","pandas","numpy"],
-    install_requires=get_requirements("./requirements_dev.txt"),
+    install_requires=get_requirements("requirements_dev.txt"),
     packages=find_packages(where = "src")
 )
