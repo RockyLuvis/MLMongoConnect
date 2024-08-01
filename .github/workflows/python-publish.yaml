@@ -44,7 +44,7 @@ jobs:
       run: |
         #cd ..
         #pytest -v
-        print("skipping testing todo")
+        echo "skipping testing todo"
         
     - name: Build package
       run: python -m build
