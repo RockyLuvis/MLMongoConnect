@@ -54,19 +54,18 @@ class mongodb_operation:
             collection.insert_one(record)
 
 
-
-    def bulk_insert(self,datafile:str,collection_name:str):
-        self.datafile = datafile
-
-        if self.path.endswith('.csv'):
-            data = pd.read_csv(self.path,encoding = 'utf-8')
-        elif self.path.endswith('.xlsx'):
-            data = pd.read_excel(self.path, encoding = 'utf-8')
-        
-        datajson = json.loads(data.to_json(orient = 'record'))
-        collection = self.create_collection()
-        collection.insert_many(datajson)
-
+##
+#    def bulk_insert(self,datafile:str,collection_name:str):
+#        self.datafile = datafile
+#
+#        if self.path.endswith('.csv'):
+#        elif self.path.endswith('.xlsx'):
+#           data = pd.read_excel(self.path, encoding = 'utf-8')
+#        
+#       datajson = json.loads(data.to_json(orient = 'record'))
+#        collection = self.create_collection()
+#       collection.insert_many(datajson)
+##
 
 #database = "mlops_test"
 #collection_name = "mlops_test_collection"
